@@ -30,7 +30,7 @@ input[type="text"]{
 }
 input::placeholder{ color:var(--muted); }
 input:focus{ border-color:var(--green); box-shadow:0 0 0 3px rgba(34,197,94,0.15); }
-.row-gap{ display:flex; gap:2px; }
+.row-gap{ display:flex; gap:10px; }
 .row-gap input{ flex:1; }
 .ghost-btn{
   border:1px solid var(--border); background:transparent; color:var(--muted);
