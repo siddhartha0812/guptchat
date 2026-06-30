@@ -264,7 +264,7 @@ export default function App() {
               <Logo />
               <div className="logo-text">Gupt<span className="accent">Chat</span></div>
             </div>
-            <div className="tagline">Speak freely. Leave nothing behind.</div>
+            <div className="tagline">Conversations that leave no footprints.</div>
 
             <div className="field">
               <label htmlFor="nickname">Nickname</label>
