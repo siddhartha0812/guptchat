@@ -2,9 +2,16 @@
 
 > **Speak freely. Leave nothing behind.**
 
-GuptChat is a privacy-focused real-time chat application built with the MERN stack and Socket.IO. Conversations exist only while participants remain connected to the room and disappear when they leave or refresh the page.
+GuptChat is a privacy-focused real-time chat application built with the MERN stack and Socket.IO. Conversations exist only while participants remain connected to the room and disappear when they leave, disconnect, or refresh the page.
 
 No accounts. No message history. No databases storing your conversations.
+
+---
+
+## 🌐 Live Demo
+
+* **Frontend:** https://guptchat.vercel.app
+* **Backend:** https://guptchat.onrender.com
 
 ---
 
@@ -19,8 +26,25 @@ No accounts. No message history. No databases storing your conversations.
 * 📱 Responsive design for desktop and mobile
 * 👥 Multiple users can join the same room
 * ✍️ Typing indicators
-* 📋 One-click room sharing
+* 🔗 One-click room sharing
 * 🔄 Automatic room cleanup when users disconnect
+* 📄 FAQ, Contact, and Privacy Policy pages
+
+---
+
+## 💡 Why GuptChat?
+
+Most messaging platforms permanently store your messages on servers.
+
+GuptChat follows a different philosophy:
+
+* No accounts
+* No databases
+* No message history
+* No tracking
+* No advertisements
+
+> **If a conversation isn't stored, it can't be leaked.**
 
 ---
 
@@ -71,18 +95,19 @@ GuptChat/
 │   ├── server.js
 │   └── package.json
 │
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
 
 ## 🚀 Installation
 
-### Clone the repository
+### Clone the Repository
 
 ```bash
-git clone https://github.com/siddhartha0812/guptchat
-cd GuptChat
+git clone https://github.com/siddhartha0812/guptchat.git
+cd guptchat
 ```
 
 ---
@@ -95,7 +120,7 @@ npm install
 npm start
 ```
 
-Server runs on:
+Backend runs on:
 
 ```text
 http://localhost:5000
@@ -137,7 +162,7 @@ The server never sees plaintext messages.
 
 GuptChat follows a simple principle:
 
-> If it isn't stored, it can't be leaked.
+> **If it isn't stored, it can't be leaked.**
 
 Therefore:
 
@@ -153,16 +178,16 @@ Therefore:
 
 ### Frontend
 
-Deploy on Vercel.
+* Vercel
 
 ### Backend
 
-Deploy on Render or Railway.
+* Render
 
-Remember to update:
+Environment Variable:
 
 ```env
-VITE_SERVER_URL=https://your-backend-url.com
+VITE_SERVER_URL=https://guptchat.onrender.com
 ```
 
 ---
@@ -184,6 +209,19 @@ No. Anyone with the room passcode can join.
 ### Is GuptChat free?
 
 Yes.
+
+---
+
+## 🚧 Roadmap
+
+* [ ] Voice Calls
+* [ ] Video Calls
+* [ ] File Sharing
+* [ ] Self-destruct Timers
+* [ ] QR Code Room Sharing
+* [ ] Progressive Web App (PWA)
+* [ ] Message Reactions
+* [ ] Custom Themes
 
 ---
 
@@ -211,6 +249,8 @@ Developed by **Siddhartha**
 
 Building privacy-first communication tools for the modern web.
 
+GitHub: https://github.com/siddhartha0812
+
 ---
 
 ## ⭐ Support
@@ -218,3 +258,9 @@ Building privacy-first communication tools for the modern web.
 If you found this project useful, consider giving it a star on GitHub.
 
 It helps the project grow and motivates future development.
+
+---
+
+### 🛡️ GuptChat
+
+**Private by design. Forgotten by default.**
