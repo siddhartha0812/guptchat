@@ -16,7 +16,6 @@ body{
 }
 [data-theme="light"] .card{ box-shadow:0 10px 40px rgba(20,30,60,0.08); }
 .logo-wrap{ text-align:center; margin-bottom:6px; }
-.logo-icon{ width:64px;height:64px; margin:0 auto 10px; display:block; }
 .logo-text{ font-size:28px; font-weight:700; letter-spacing:-0.02em; }
 .logo-text .accent{ color:var(--green); }
 .tagline{ text-align:center; color:var(--muted); font-size:14px; margin:6px 0 26px; }
