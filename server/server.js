@@ -26,7 +26,14 @@ app.get('/health', (req, res) => {
 
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: CLIENT_ORIGIN, methods: ['GET', 'POST'] },
+  cors: {
+    origin: [
+      "http://localhost:5173",
+      "https://guptchat.vercel.app"
+    ],
+    methods: ["GET", "POST"],
+    credentials: true
+  }
 });
 
 // ---- In-memory room state. Never written to disk or a DB. ----
