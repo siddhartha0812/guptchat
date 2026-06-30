@@ -14,7 +14,13 @@ const PORT = process.env.PORT || 5000;
 const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || '*';
 
 const app = express();
-app.use(cors({ origin: CLIENT_ORIGIN }));
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://guptchat.vercel.app"
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 const httpLimiter = rateLimit({ windowMs: 60_000, max: 60 });
